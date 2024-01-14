@@ -12,4 +12,26 @@ S_TREAM VARCHAR (20) NOT NULL,
 DOB DATE NOT NULL
 );
 
+To select database.
+USE school;
+
+-- Q1. To display all the records form STUDENT table. SELECT * FROM student --
+SELECT * FROM STUDENT;
+
+-- Q2  To display any name and date of birth from the table STUDENT. SELECT StdName, DOB FROM student --
+SELECT STD_NAME,DOB FROM STUDENT WHERE PERCENTAGE > 50;
+
+-- Q3. To display all students record where percentage is greater of equal to 80 FROM student table. SELECT * FROM student WHERE percentage >= 80;
+
+SELECT * FROM STUDENT WHERE PERCENTAGE >= 80;
+
+-- Q4. To display student name, stream and percentage where percentage of student is more than 80 
+
+SELECT STD_NAME,S_TREAM,PERCENTAGE FROM STUDENT WHERE PERCENTAGE > 80;
+
+-- Q.5 To display all records of science students whose percentage is more than 75 form student table --
+
+SELECT * FROM STUDENT WHERE S_TREAM = 'Science' AND PERCENTAGE > 75;
+
+
 
